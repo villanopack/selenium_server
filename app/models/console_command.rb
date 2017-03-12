@@ -1,0 +1,2 @@
+class ConsoleCommand < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+  tests_path, :class => 'btn btn-default'  %>
+
+<% if @test.output? %>
+  <pre id="test-pre" class="col-lg-12">
+    <%= @test.output  %>
+  </pre>
+<% else  %>
+  <pre id="test-pre" class="col-lg-12">
+     Test not executed yet
+  </pre>
+<% end  %>
